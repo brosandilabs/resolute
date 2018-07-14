@@ -3,9 +3,7 @@
 module.exports = {
     retry(fn, options = {}) {
         // set default attempts
-        if(!options._attempts) {
-            options._attempts = 1;
-        }
+        options._attempts = 1;
 
         // set default backoff policy
         if(!options.backoff_policy) {
