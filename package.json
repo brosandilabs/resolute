@@ -1,0 +1,22 @@
+{
+  "name": "@brosandilabs/resolute",
+  "version": "0.0.0",
+  "description": "A resolute retry module for javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brosandilabs/resolute.git"
+  },
+  "keywords": [
+    "retry"
+  ],
+  "author": "brosandi labs <smile@brosandilabs.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/brosandilabs/resolute/issues"
+  },
+  "homepage": "https://github.com/brosandilabs/resolute#readme"
+}
