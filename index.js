@@ -15,6 +15,14 @@ module.exports = {
             options.backoff_duration = 1500;
         }
 
+        const _timeout = (backoff) => {
+            return new Promise((resolve) => {
+                return setTimeout(() => {
+                    return resolve();
+                }, backoff);
+            });
+        }
+
         const _retry = async (...args) => {
             try {
                 return await fn(...args);
@@ -32,9 +40,9 @@ module.exports = {
 
                     options._attempts++;
 
-                    return setTimeout(async () => {
-                        return await _retry(...args);
-                    }, backoff);
+                    await _timeout(backoff);
+
+                    return await _retry(...args);
                 } else {
                     throw err;
                 }
