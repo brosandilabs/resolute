@@ -1,6 +1,6 @@
 {
   "name": "@brosandilabs/resolute",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A resolute retry module for javascript",
   "main": "index.js",
   "scripts": {
