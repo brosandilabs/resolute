@@ -27,7 +27,7 @@ module.exports = {
             try {
                 return await fn(...args);
             } catch(err) {
-                if(options.max_retries === undefined || options._attempts < options.max_retries) {
+                if(options.max_retries === undefined || options._attempts <= options.max_retries) {
                     let backoff;
 
                     if(options.backoff_policy === 'exponential') {
