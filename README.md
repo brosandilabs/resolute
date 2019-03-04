@@ -5,7 +5,7 @@ A resolute retry module for javascript
 
 ## Usage
 ``` javascript
-const resolute = require('brosandilabs/resolute');
+const resolute = require('@brosandilabs/resolute');
 
 const test = async (message) => {
     await some_promise(message);
